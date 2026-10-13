@@ -5,7 +5,7 @@ const app = express();
 
 app.get('/quote',(req,res)=>{
     const randomIndex = Math.floor(Math.random() * quotes.length);
-    res.json({quote: quotes[randomIndex]} + " - " + '-Toby Quality');
+    res.json({quote: quotes[randomIndex]});
 });
 
 const PORT = process.env.PORT || 3000;

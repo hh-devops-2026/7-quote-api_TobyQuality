@@ -5,7 +5,7 @@ const app = express();
 
 app.get('/quote',(req,res)=>{
     const randomIndex = Math.floor(Math.random() * quotes.length);
-    console.log('test quote');
+    console.log('test :', req);
     res.json({quote: quotes[randomIndex]});
 });
 
